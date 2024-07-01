@@ -137,7 +137,7 @@ if [[ "$input" == "c" ]]; then
   if [[ "$setup_langs" == "1" ]]; then
     printf "\x1b[38;5;178mo Setting up compilers/interpreters\x1b[38;5;15m\n"
     $sudo_cmd $package_manager update
-    $sudo_cmd $package_manager install gcc clang python lua nodejs -y
+    $sudo_cmd $package_manager install gcc clang python nodejs -y
   fi
 
   if [[ "$setup_omz" == "1" ]]; then
